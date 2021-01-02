@@ -1,5 +1,6 @@
 package com.example.teste
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,8 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+
+const val PARAM1_NAME = "nome"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +26,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun button2(view: View) {
-        Toast.makeText(this, "button2", Toast.LENGTH_LONG).show()
+        var edit1 = findViewById<EditText>(R.id.editTExtTextPersonName)
+        val intent = Intent(this, MainActivity2::class.java).apply {
+            putExtra(PARAM1_NAME, edit1.text.toString())
+        }
+        startActivity(intent)
     }
 }
 
