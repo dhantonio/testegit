@@ -6,17 +6,9 @@ import android.os.Bundle
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main) //diz qual o ficheiiro de layout que tera o conteudo para esta atividade
     }
 }
 
-//TESTEEEEEEEEEEEEEEEEEEEE
 
-//FUNICONALIDADDDDEEEEE 1
-
-//FUNIONLIDADEEE 2
-
-//fun 3
-
-//funcionalidade - 4
 
