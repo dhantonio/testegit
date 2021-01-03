@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">teste</string>
-    <string name="welcome">Bem-vindo à app</string>
-    <string name="file">Ficheiro</string>
-    <string name="create_new">Criar Novo</string>
-    <string name="open">Abrir</string>
-</resources>
